@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Course - Contact</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Course Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/contact_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+
+<style>
+
+  .super_container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact {
+    flex: 1; /* Asegura que esta sección ocupe el espacio disponible */
+  }
+
+  footer {
+    width: 100%; /* El footer ocupa todo el ancho */
+    background-color: #333; /* Fondo del footer */
+    color: white; /* Color del texto */
+    text-align: center;
+    padding: 20px 0;
+    flex-shrink: 0; /* Evita que el footer se reduzca */
+    margin: 0; /* Elimina cualquier margen no deseado */
+  }
+
+  /* Resto de estilos */
+  .logo img {
+    width: 160px; 
+  }
+
+  .newsletter .section_title h1 {
+    font-size: 20px; 
+    text-align: center;
+  }
+
+  .newsletter .legal-text {
+    font-size: 12px; 
+    font-weight: normal;
+    color: #ffffff; 
+    text-align: center;
+    line-height: 1.6; 
+    margin-bottom: 15px;
+  }
+
+  .events {
+    padding-bottom: 50px; /* Ajusta el valor según el espacio que necesites */
+  }
+
+  .course_box img.card-img-top {
+    width: 100%; /* Esto asegura que las imágenes llenen el ancho del contenedor */
+    height: 500px; /* Ajusta esta altura a lo que necesites */
+    object-fit: cover; /* Esto asegura que las imágenes mantengan su proporción y llenen el espacio sin deformarse */
+  }
+</style>
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+	<header class="header d-flex flex-row">
+		<div class="header_content d-flex flex-row align-items-center">
+			<!-- Logo -->
+			<div class="logo_container">
+				<div class="logo">
+					<img src="images/logo.png" alt="">
+					<span>¡A LEER!</span>
+				</div>
+			</div>
+
+			<!-- Main Navigation -->
+			<nav class="main_nav_container">
+				<div class="main_nav">
+					<ul class="main_nav_list">
+						<li class="main_nav_item"><a href="home.html">Home</a></li>
+						<li class="main_nav_item"><a href="libro.html">Libros</a></li>
+						<li class="main_nav_item"><a href="foro.html">Foro</a></li>
+						<li class="main_nav_item"><a href="contacto.html">Contáctanos</a></li>
+						<li class="main_nav_item"><a href="ayuda.html">Ayuda</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="header_side d-flex flex-row justify-content-center align-items-center" style="background-color: #e2c98d;">
+      <img src="images/logout.png" alt="" style="margin-right: 10px;">
+      <li class="main_nav_item">
+          <a href="inicio.html" style="color: #000000; font-weight: bold; text-decoration: none;" onmouseover="this.style.color='#85aa8d'" onmouseout="this.style.color='#000000'">Cerrar sesión</a>
+      </li>
+    </div>
+
+		<!-- Hamburger -->
+		<div class="hamburger_container">
+			<i class="fas fa-bars trans_200"></i>
+		</div>
+
+	</header>
+	
+
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background_container prlx_parent">
+			<div class="home_background prlx" style="background-image:url(images/contact_background.jpg)"></div>
+		</div>
+		<div class="home_content" style="background-color: #e2c98d;">
+			<h1>Contáctanos</h1>
+		</div>
+	</div>
+
+	<!-- Contact -->
+
+	<div class="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="contact_form">
+						<div class="contact_title">Contacto</div>
+						<div class="contact_form_container">
+							<form id= "contact-form" action="/send-email" method="POST" enctype="multipart/form-data">
+							  <div class="mb-3">
+								<label for="nombre" class="form-label">Nombre Completo</label>
+								<input type="text" class="form-control" id="nombre" name="nombre" required>
+							  </div>
+							  <div class="mb-3">
+								<label for="email" class="form-label">Correo Electrónico</label>
+								<input type="email" class="form-control" id="email" name="email" required>
+							  </div>
+							  <div class="mb-3">
+								<label for="asunto" class="form-label">Asunto</label>
+								<input type="text" class="form-control" id="asunto" name="asunto" required>
+							  </div>
+							  <div class="mb-3">
+								<label for="mensaje" class="form-label">Mensaje</label>
+								<textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+							  </div>
+							  <button type="submit" class="btn btn-primary">Enviar</button>
+							</form>
+						  </div>
+						  
+					</div>
+				</div>
+
+				<div class="col-lg-4">
+					<div class="about">
+						<div class="about_title">¡Mantente en contacto!</div>
+						<p class="about_text">En Biblio Smart nos importa tu opinión. Si tienes preguntas, sugerencias o deseas recibir más información, no dudes en ponerte en contacto con nosotros. ¡Estamos aquí para ayudarte!</p>
+
+						<div class="contact_info">
+							<ul>
+								<li class="contact_info_item">
+								  <div class="contact_info_icon">
+									<img src="images/placeholder.svg" alt="">
+								  </div> Online
+								</li>
+								<li class="contact_info_item">
+								  <div class="contact_info_icon">
+									<img src="images/smartphone.svg" alt="">
+								  </div> 999 888 777
+								</li>
+								<li class="contact_info_item">
+								  <div class="contact_info_icon">
+									<img src="images/envelope.svg" alt="">
+								  </div> bibliosmart1@gmail.com
+								</li>
+							  </ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="container">
+			
+			<!-- Newsletter -->
+
+			<div class="newsletter">
+        <div class="row">
+          <div class="col">
+            <div class="section_title text-center">
+              <h1>Aviso Legal</h1>
+              <p class="legal-text">Todos los libros disponibles en esta página se encuentran en el dominio público o han sido compartidos bajo licencias que permiten su distribución gratuita. Nos esforzamos por verificar cuidadosamente el estado legal de cada obra antes de publicarla.</p>
+              
+              <p class="legal-text">Si considera que algún material aquí publicado infringe derechos de autor vigentes o vulnera alguna normativa legal, por favor contáctenos de inmediato a través de [correo electrónico o formulario de contacto]. Revisaremos la solicitud y tomaremos las medidas necesarias, como la eliminación del contenido en cuestión.</p>
+              
+              <p class="legal-text">Esta página no promueve ni apoya la distribución de contenido protegido por derechos de autor sin la debida autorización de los titulares.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+			<!-- Footer Content -->
+
+			<div class="footer_content">
+				<div class="row">
+
+					<!-- Footer Column - About -->
+					<div class="col-lg-3 footer_col">
+
+						<!-- Logo -->
+						<div class="logo_container">
+							<div class="logo">
+								<img src="images/logo.png" alt="">
+							</div>
+						</div>
+						<p class="footer_about_text">Lectura con tan solo un clic</p>
+
+					</div>
+
+					<!-- Footer Column - Menu -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Menu</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="main_nav_item"><a href="home.html">Home</a></li>
+                <li class="main_nav_item"><a href="libro.html">Libros</a></li>
+                <li class="main_nav_item"><a href="foro.html">Foro</a></li>
+                <li class="main_nav_item"><a href="contacto.html">Contáctanos</a><li>
+						<li class="main_nav_item"><a href="ayuda.html">Ayuda</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Column - Usefull Links -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Útil</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_list_item"><a href="home.html#mision_vision">Misión y Visión</a></li>
+								<li class="footer_list_item"><a href="home.html#libros">Libros Populares</a></li>
+								<li class="footer_list_item"><a href="home.html#servicios">Servicios</a></li>
+								<li class="footer_list_item"><a href="home.html#reflexiones">Reflexiones</a></li>
+								<li class="footer_list_item"><a href="home.html#eventos">Eventos calendario</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Column - Contact -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Contacto</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images/placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									Online
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images/smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									999 888 777
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images/envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>bibliosmart1@gmail.com
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Footer Copyright -->
+
+			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+				<div class="footer_copyright">
+					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Grupo 07</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+				</div>
+				<div class="footer_social ml-sm-auto">
+					<ul class="menu_social">
+						<li class="menu_social_item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/contact_custom.js"></script>
+
+<script>
+	document.getElementById('contact-form').addEventListener('submit', async function (e) {
+	  e.preventDefault();
+  
+	  const form = e.target;
+	  const formData = new FormData(form);
+  
+	  try {
+		const response = await fetch('/send-email', {
+		  method: 'POST',
+		  headers: { 'Content-Type': 'application/json' },
+		  body: JSON.stringify({
+			nombre: formData.get('nombre'),
+			email: formData.get('email'),
+			asunto: formData.get('asunto'),
+			mensaje: formData.get('mensaje'),
+		  }),
+		});
+  
+		const result = await response.json();
+  
+		if (result.success) {
+		  alert('Mensaje enviado exitosamente.');
+		  form.reset();
+		  window.location.reload();
+		} else {
+		  alert(result.message || 'Hubo un error. Intente nuevamente.');
+		}
+	  } catch (error) {
+		console.error('Error:', error);
+		alert('Error al procesar la solicitud.');
+	  }
+	});
+  </script>
+  
+  
+
+</body>
+</html>

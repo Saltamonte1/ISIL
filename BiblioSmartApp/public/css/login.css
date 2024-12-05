@@ -1,0 +1,71 @@
+body {
+    background: #0d1b2a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .login-container {
+    background: rgba(17, 25, 40, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    color: #ffffff;
+  }
+  
+  .login-title {
+    color: #bc2a1a;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .form-control {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    border-radius: 0;
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+    border-color: #bc2a1a;
+  }
+  
+  .btn-login {
+    background-color: #bc2a1a;
+    color: #ffffff;
+    border: none;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 20px;
+  }
+  
+  .btn-login:hover {
+    background-color: #bc2a1a;
+  }
+  
+  .remember-me {
+    color: #ccc;
+  }
+  
+  .forgot-password {
+    color: #bc2a1a;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    color: #bc2a1a;
+    text-decoration: underline;
+  }
+
+  .form-control::placeholder {
+    color: #cccccc;
+  } 

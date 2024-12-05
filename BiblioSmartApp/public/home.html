@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BiblioSmart</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Course Project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+
+<style>
+  .logo img {
+    width: 160px; 
+  }
+  .newsletter .section_title h1 {
+  font-size: 20px; 
+  text-align: center;
+}
+
+.newsletter .legal-text {
+  font-size: 12px; 
+  font-weight: normal;
+  color: #ffffff; 
+  text-align: center;
+  line-height: 1.6; 
+  margin-bottom: 15px;
+}
+
+.events {
+  padding-bottom: 50px; /* Ajusta el valor según el espacio que necesites */
+}
+footer {
+  margin-top: 50px; /* Esto agregará 50px de espacio entre el footer y la última sección */
+}
+
+.course_box img.card-img-top {
+  width: 100%; /* Esto asegura que las imágenes llenen el ancho del contenedor */
+  height: 500px; /* Ajusta esta altura a lo que necesites */
+  object-fit: cover; /* Esto asegura que las imágenes mantengan su proporción y llenen el espacio sin deformarse */
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+	<header class="header d-flex flex-row">
+		<div class="header_content d-flex flex-row align-items-center">
+			<!-- Logo -->
+			<div class="logo_container">
+				<div class="logo">
+					<img src="images/logo.png" alt="">
+					<span>¡A leer!</span>
+				</div>
+			</div>
+
+			<!-- Main Navigation -->
+			<nav class="main_nav_container">
+				<div class="main_nav">
+					<ul class="main_nav_list">
+						<li class="main_nav_item"><a href="home.html">Home</a></li>
+						<li class="main_nav_item"><a href="libro.html">Libros</a></li>
+						<li class="main_nav_item"><a href="foro.html">Foro</a></li>
+						<li class="main_nav_item"><a href="contacto.html">Contáctanos</a></li>
+						<li class="main_nav_item"><a href="ayuda.html">Ayuda</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="header_side d-flex flex-row justify-content-center align-items-center">
+			<img src="images/logout.png" alt="">
+			<li class="main_nav_item"><a href="inicio.html">Cerrar sesión</a></li>
+		</div>
+
+		<!-- Hamburger -->
+		<div class="hamburger_container">
+			<i class="fas fa-bars trans_200"></i>
+		</div>
+
+	</header>
+	
+	<!-- Menu -->
+	<div class="menu_container menu_mm">
+
+		<!-- Menu Close Button -->
+		<div class="menu_close_container">
+			<div class="menu_close"></div>
+		</div>
+
+		<!-- Menu Items -->
+		<div class="menu_inner menu_mm">
+			<div class="menu menu_mm">
+				<ul class="menu_list menu_mm">
+					<li class="main_nav_item"><a href="home.html">Home</a></li>
+						<li class="main_nav_item"><a href="libro.html">Libros</a></li>
+						<li class="main_nav_item"><a href="foro.html">Foro</a></li>
+						<li class="main_nav_item"><a href="contacto.html">Contáctanos</a></li>
+						<li class="main_nav_item"><a href="ayuda.html">Ayuda</a></li>
+				</ul>
+
+				<!-- Menu Social -->
+				
+				<div class="menu_social_container menu_mm">
+					<ul class="menu_social menu_mm">
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item menu_mm"><a href="#"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+
+				<div class="menu_copyright menu_mm">Grupo 07 - All rights reserved</div>
+			</div>
+
+		</div>
+
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+
+		<!-- Hero Slider -->
+		<div class="hero_slider_container">
+			<div class="hero_slider owl-carousel">
+				
+				<!-- Hero Slide -->
+				<div class="hero_slide">
+					<div class="hero_slide_background" style="background-image:url(images/slider_background.jpg)"></div>
+					<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
+						<div class="hero_slide_content text-center">
+							<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Empieza con tu <span>Educación</span> hoy!</h1>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Hero Slide -->
+				<div class="hero_slide">
+					<div class="hero_slide_background" style="background-image:url(images/slider_background.jpg)"></div>
+					<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
+						<div class="hero_slide_content text-center">
+							<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Vamos a <span>Leer</span> hoy!</h1>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Hero Slide -->
+				<div class="hero_slide">
+					<div class="hero_slide_background" style="background-image:url(images/slider_background.jpg)"></div>
+					<div class="hero_slide_container d-flex flex-column align-items-center justify-content-center">
+						<div class="hero_slide_content text-center">
+							<h1 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOut">Cada día se <span>Aprende</span> más!</h1>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="hero_slider_left hero_slider_nav trans_200"><span class="trans_200"> ← </span></div>
+			<div class="hero_slider_right hero_slider_nav trans_200"><span class="trans_200"> → </span></div>
+		</div>
+
+	</div>
+
+	<div class="hero_boxes">
+		<div class="hero_boxes_inner">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-4 hero_box_col">
+						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
+							<img src="images/earth-globe.svg" class="svg" alt="">
+							<div class="hero_box_content">
+								<h2 class="hero_box_title">Foro</h2>
+								<a href="foro.html" class="hero_box_link">Ver más</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 hero_box_col">
+						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
+							<img src="images/books.svg" class="svg" alt="">
+							<div class="hero_box_content">
+								<h2 class="hero_box_title">Libros online</h2>
+								<a href="libro.html" class="hero_box_link">Ver más</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 hero_box_col">
+						<div class="hero_box d-flex flex-row align-items-center justify-content-start">
+							<img src="images/professor.svg" class="svg" alt="">
+							<div class="hero_box_content">
+								<h2 class="hero_box_title">Contáctanos</h2>
+								<a href="contacto.html" class="hero_box_link">Ver más</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popular page_section" id="mision_vision"></div>>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title text-center">
+						<h1>Sobre nosotros</h1>
+					</div>
+				</div>
+			</div>
+
+	<!-- Misión y Visión de BiblioSmart -->
+<div class="register" >
+  <div class="container-fluid">
+    <div class="row row-eq-height">
+      
+      <!-- Misión (Lado izquierdo con fondo de color) -->
+      <div class="col-lg-6 nopadding" > <!-- Color de fondo para la Misión -->
+        <div class="register_section d-flex flex-column align-items-center justify-content-center" style="color: white;">
+          <div class="register_content text-center">
+            <h1 class="register_title">Misión</h1>
+            <p class="register_text">
+              En BiblioSmart, nuestra misión es proporcionar una plataforma integral y accesible para estudiantes, académicos, y cualquier persona interesada en el conocimiento. Nos comprometemos a ofrecer un acceso rápido, seguro y sencillo a una amplia variedad de recursos educativos y literarios, tales como libros, artículos académicos, investigaciones científicas, y materiales de referencia. A través de nuestra interfaz intuitiva y moderna, buscamos facilitar la gestión y organización de los recursos que los usuarios necesitan para su aprendizaje y desarrollo profesional.
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visión (Lado derecho con imagen de fondo) -->
+      <div class="col-lg-6 nopadding" style="background-image: url('images/search_background.jpg'); background-size: cover; background-position: center;">
+        <div class="register_section d-flex flex-column align-items-center justify-content-center" style="background-color: rgba(0, 0, 0, 0.5); color: white;">
+          <div class="register_content text-center">
+            <h1 class="register_title">Visión</h1>
+            <p class="register_text">
+              Nuestra visión es ser la biblioteca virtual más confiable y accesible, liderando la transformación digital del aprendizaje. Queremos ofrecer una plataforma dinámica que se adapte a las necesidades de los usuarios, proporcionando acceso a una biblioteca moderna.
+              Aspiramos a ser la herramienta principal para estudiantes e investigadores, brindando una experiencia enriquecedora que potencie su conocimiento. Buscamos expandir nuestra plataforma, incorporando nuevas tecnologías para asegurar un acceso igualitario a la educación y el conocimiento para todos.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+  <!-- Popular -->
+
+	<div class="popular page_section" id="libros"></div>>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title text-center">
+						<h1>Libros con Dominio Público</h1>
+					</div>
+				</div>
+			</div>
+
+			<div class="row course_boxes">
+				
+				<!-- Popular Course Item -->
+				<div class="col-lg-4 course_box">
+					<div class="card">
+						<img class="card-img-top" src="images/libro1.webp" alt="https://unsplash.com/@kellybrito">
+						<div class="card-body text-center">
+							<div class="card-title"><a href="courses.html">El quijote de la Mancha</a></div>
+						</div>
+						<div class="price_box d-flex flex-row align-items-center">
+							<div class="course_author_image">
+								<img src="images/escritor2.jpeg" alt="https://unsplash.com/@mehdizadeh">
+							</div>
+							<div class="course_author_name">Miguel de Cervantes, <span>Author</span></div>
+							<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>✓</span></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Popular Course Item -->
+				<div class="col-lg-4 course_box">
+					<div class="card">
+						<img class="card-img-top" src="images/libro2.png" alt="https://unsplash.com/@cikstefan">
+						<div class="card-body text-center">
+							<div class="card-title"><a href="courses.html">Crimen y Castigo</a></div>
+						</div>
+						<div class="price_box d-flex flex-row align-items-center">
+							<div class="course_author_image">
+								<img src="images/autor2.jpeg" alt="https://unsplash.com/@mehdizadeh">
+							</div>
+							<div class="course_author_name">Fiódor Dostoyevski, <span>Author</span></div>
+							<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>✓</span></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Popular Course Item -->
+				<div class="col-lg-4 course_box">
+					<div class="card">
+						<img class="card-img-top" src="images/libro3.webp" alt="https://unsplash.com/@dsmacinnes">
+						<div class="card-body text-center">
+							<div class="card-title"><a href="courses.html">El Principito</a></div>
+						</div>
+						<div class="price_box d-flex flex-row align-items-center">
+							<div class="course_author_image">
+								<img src="images/autor3.jpeg" alt="https://unsplash.com/@mehdizadeh">
+							</div>
+							<div class="course_author_name">Antoine de Saint-Exupéry, <span>Author</span></div>
+							<div class="course_price d-flex flex-column align-items-center justify-content-center"><span>✓</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<!-- Services -->
+
+	<div class="services page_section" id="servicios"></div>>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title text-center">
+						<h1>Nuestros Servicios</h1>
+					</div>
+				</div>
+			</div>
+
+			<div class="row services_row">
+
+				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+					<div class="icon_container d-flex flex-column justify-content-end">
+						<img src="images/earth-globe.svg" alt="">
+					</div>
+					<h3>Foros academicos</h3>
+					<p>Conecta con otros usuarios, comparte conocimientos y colabora en foros de temas académicos y profesionales.</p>
+				</div>
+
+				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+					<div class="icon_container d-flex flex-column justify-content-end">
+						<img src="images/exam.svg" alt="">
+					</div>
+					<h3>Biblioteca Personalizada</h3>
+					<p>Crea y organiza tu propia biblioteca digital para un aprendizaje más eficiente y adaptado a tus necesidades.</p>
+				</div>
+
+				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+					<div class="icon_container d-flex flex-column justify-content-end">
+						<img src="images/books.svg" alt="">
+					</div>
+					<h3>Librería Increíble</h3>
+					<p>Acceso a libros electrónicos, artículos académicos y materiales educativos desde cualquier lugar y en cualquier momento.</p>
+				</div>
+
+				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+					<div class="icon_container d-flex flex-column justify-content-end">
+						<img src="images/professor.svg" alt="">
+					</div>
+					<h3>Soporte al Usuario</h3>
+					<p>Ofrecemos atención personalizada para resolver cualquier problema o duda que los usuarios puedan tener sobre el uso de la plataforma, asegurando una experiencia sin inconvenientes.</p>
+				</div>
+
+				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+					<div class="icon_container d-flex flex-column justify-content-end">
+						<img src="images/blackboard.svg" alt="">
+					</div>
+					<h3>Biblioteca Sostenible</h3>
+					<p>Fomentamos el uso de libros digitales en lugar de impresos, reduciendo el impacto ambiental y el consumo de recursos, contribuyendo a una educación más sostenible y accesible.</p>
+				</div>
+
+				<div class="col-lg-4 service_item text-left d-flex flex-column align-items-start justify-content-start">
+					<div class="icon_container d-flex flex-column justify-content-end">
+						<img src="images/mortarboard.svg" alt="">
+					</div>
+					<h3>Libros de Dominio Público</h3>
+					<p>Ofrecemos libros que han pasado a dominio público, lo que significa que puedes acceder, leer y compartir estos textos sin restricciones de derechos de autor. Desde clásicos literarios hasta obras históricas, este servicio proporciona acceso libre y gratuito a materiales de gran valor cultural y educativo.</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Testimonials -->
+
+	<div class="testimonials page_section" id="reflexiones" style="position: relative; padding: 50px 0;">
+    <!-- Fondo oscuro y difuso con imagen -->
+    <div class="testimonials_background_container prlx_parent" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;">
+      <div class="testimonials_background prlx" 
+           style="background-image: url('images/reflexiones.avif'); background-size: cover; background-position: center; height: 100%; 
+                  position: absolute; top: 0; left: 0; right: 0; bottom: 0; 
+                  filter: blur(2px) opacity(0.9);"></div>
+    </div>
+  
+    <!-- Contenido de la sección -->
+    <div class="container" style="position: relative; z-index: 1; color: white;">
+      <div class="row">
+        <div class="col">
+          <div class="section_title text-center">
+            <h1>Reflexionemos</h1>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="testimonials_slider_container">
+            <div class="owl-carousel owl-theme testimonials_slider">
+              <!-- Testimonial 1 -->
+              <div class="owl-item">
+                <div class="testimonials_item text-center">
+                  <div class="quote">“</div>
+                  <p class="testimonials_text">"Leer es equivalente a pensar con la cabeza de otra persona en lugar de con la propia". Esta reflexión destaca cómo la lectura nos permite experimentar la vida desde otras perspectivas, facilitando nuestra comprensión del mundo y de nosotros mismos.</p>
+                  <div class="testimonial_user">
+                    <div class="testimonial_image mx-auto">
+                      <img src="images/escritor1.jpg" alt="">
+                    </div>
+                    <div class="testimonial_name">Arthur Schopenhauer</div>
+                    <div class="testimonial_title">Filósofo alemán</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 2 -->
+              <div class="owl-item">
+                <div class="testimonials_item text-center">
+                  <div class="quote">“</div>
+                  <p class="testimonials_text">"El que lee mucho y anda mucho, ve mucho y sabe mucho". Esta frase resalta cómo leer nos permite explorar otras culturas, épocas y pensamientos, enriqueciendo nuestro bagaje cultural y personal.</p>
+                  <div class="testimonial_user">
+                    <div class="testimonial_image mx-auto">
+                      <img src="images/escritor2.jpeg" alt="">
+                    </div>
+                    <div class="testimonial_name">Miguel de Cervantes</div>
+                    <div class="testimonial_title">Novelista y poeta español</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 3 -->
+              <div class="owl-item">
+                <div class="testimonials_item text-center">
+                  <div class="quote">“</div>
+                  <p class="testimonials_text">"El que ama la lectura, tiene todo a su alcance". Esta afirmación destaca cómo los libros nos abren un universo de posibilidades y nos permiten acceder a un mundo de conocimiento y sabiduría.</p>
+                  <div class="testimonial_user">
+                    <div class="testimonial_image mx-auto">
+                      <img src="images/escritor3.jpeg" alt="">
+                    </div>
+                    <div class="testimonial_name">William Godwin</div>
+                    <div class="testimonial_title">Escritor británico</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+	<!-- Events -->
+
+	<div class="events page_section" id="eventos"></div>>
+		<div class="container">
+			
+			<div class="row">
+				<div class="col">
+					<div class="section_title text-center">
+						<h1>Eventos Calendario</h1>
+					</div>
+				</div>
+			</div>
+			
+			<div class="event_items">
+
+				<!-- Event Item -->
+				<div class="row event_item">
+					<div class="col">
+						<div class="row d-flex flex-row align-items-end">
+
+							<div class="col-lg-2 order-lg-1 order-2">
+								<div class="event_date d-flex flex-column align-items-center justify-content-center">
+									<div class="event_day">27</div>
+									<div class="event_month">Noviembre</div>
+								</div>
+							</div>
+
+							<div class="col-lg-6 order-lg-2 order-3">
+								<div class="event_content">
+									<div class="event_name"><a class="trans_200" href="#">Aniversario de la Batalla de Tarapacá</a></div>
+									<div class="event_location">Perú</div>
+									<p>La Batalla de Tarapacá es una hazaña histórica que se recuerda como un ejemplo de sacrificio, honor, gloria y patriotismo. En esta batalla, héroes como Francisco Bolognesi, Isaac Recavarren, Andrés Avelino Cáceres, Belisario Suárez y Alfonso Ugarte demostraron su valentía.</p>
+								</div>
+							</div>
+
+							<div class="col-lg-4 order-lg-3 order-1">
+								<div class="event_image">
+									<img src="images/event_1.jpg" alt="https://unsplash.com/@theunsteady5">
+								</div>
+							</div>
+
+						</div>	
+					</div>
+				</div>
+
+				<!-- Event Item -->
+				<div class="row event_item">
+					<div class="col">
+						<div class="row d-flex flex-row align-items-end">
+
+							<div class="col-lg-2 order-lg-1 order-2">
+								<div class="event_date d-flex flex-column align-items-center justify-content-center">
+									<div class="event_day">09</div>
+									<div class="event_month">Diciembre</div>
+								</div>
+							</div>
+
+							<div class="col-lg-6 order-lg-2 order-3">
+								<div class="event_content">
+									<div class="event_name"><a class="trans_200" href="#">Aniversario de la Batalla de Ayacucho</a></div>
+									<div class="event_location">Perú</div>
+									<p>Finalizada la batalla de Ayacucho, quedó confirmada la Independencia del Perú y América. Por su trascendencia en el Perú y en el resto de América, el presidente Augusto B. Leguía, en setiembre de 1928, decretó el 9 de diciembre como Día del Ejército</p>
+								</div>
+							</div>
+
+							<div class="col-lg-4 order-lg-3 order-1">
+								<div class="event_image">
+									<img src="images/event_2.jpg" alt="https://unsplash.com/@claybanks1989">
+								</div>
+							</div>
+
+						</div>	
+					</div>
+				</div>
+
+				<!-- Event Item -->
+				<div class="row event_item">
+					<div class="col">
+						<div class="row d-flex flex-row align-items-end">
+
+							<div class="col-lg-2 order-lg-1 order-2">
+								<div class="event_date d-flex flex-column align-items-center justify-content-center">
+									<div class="event_day">25</div>
+									<div class="event_month">Diciembre</div>
+								</div>
+							</div>
+
+							<div class="col-lg-6 order-lg-2 order-3">
+								<div class="event_content">
+									<div class="event_name"><a class="trans_200" href="#">Navidad</a></div>
+									<div class="event_location">Mundial</div>
+									<p>Esta solemnidad, que conmemora el nacimiento de Jesucristo en Belén, se celebra el 25 de diciembre en la Iglesia católica, en la Iglesia anglicana, en algunas comunidades protestantes y en la mayoría de las Iglesias ortodoxas.</p>
+								</div>
+							</div>
+
+							<div class="col-lg-4 order-lg-3 order-1">
+								<div class="event_image">
+									<img src="images/event_3.jpg" alt="https://unsplash.com/@juanmramosjr">
+								</div>
+							</div>
+
+						</div>	
+					</div>
+				</div>
+
+			</div>
+				
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="container">
+			
+			<!-- Newsletter -->
+
+			<div class="newsletter">
+        <div class="row">
+          <div class="col">
+            <div class="section_title text-center">
+              <h1>Aviso Legal</h1>
+              <p class="legal-text">Todos los libros disponibles en esta página se encuentran en el dominio público o han sido compartidos bajo licencias que permiten su distribución gratuita. Nos esforzamos por verificar cuidadosamente el estado legal de cada obra antes de publicarla.</p>
+              
+              <p class="legal-text">Si considera que algún material aquí publicado infringe derechos de autor vigentes o vulnera alguna normativa legal, por favor contáctenos de inmediato a través de [correo electrónico o formulario de contacto]. Revisaremos la solicitud y tomaremos las medidas necesarias, como la eliminación del contenido en cuestión.</p>
+              
+              <p class="legal-text">Esta página no promueve ni apoya la distribución de contenido protegido por derechos de autor sin la debida autorización de los titulares.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+			<!-- Footer Content -->
+
+			<div class="footer_content">
+				<div class="row">
+
+					<!-- Footer Column - About -->
+					<div class="col-lg-3 footer_col">
+
+						<!-- Logo -->
+						<div class="logo_container">
+							<div class="logo">
+								<img src="images/logo.png" alt="">
+							</div>
+						</div>
+						<p class="footer_about_text">Lectura con tan solo un clic</p>
+
+					</div>
+
+					<!-- Footer Column - Menu -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Menu</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="main_nav_item"><a href="home.html">Home</a></li>
+                <li class="main_nav_item"><a href="libro.html">Libros</a></li>
+                <li class="main_nav_item"><a href="foro.html">Foro</a></li>
+                <li class="main_nav_item"><a href="contacto.html">Contáctanos</a><li>
+						<li class="main_nav_item"><a href="ayuda.html">Ayuda</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Column - Usefull Links -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Útil</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_list_item"><a href="#mision_vision">Misión y Visión</a></li>
+								<li class="footer_list_item"><a href="#libros">Libros Populares</a></li>
+								<li class="footer_list_item"><a href="#servicios">Servicios</a></li>
+								<li class="footer_list_item"><a href="#reflexiones">Reflexiones</a></li>
+								<li class="footer_list_item"><a href="#eventos">Eventos calendario</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Column - Contact -->
+
+					<div class="col-lg-3 footer_col">
+						<div class="footer_column_title">Contacto</div>
+						<div class="footer_column_content">
+							<ul>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images/placeholder.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									Online
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images/smartphone.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>
+									999 888 777
+								</li>
+								<li class="footer_contact_item">
+									<div class="footer_contact_icon">
+										<img src="images/envelope.svg" alt="https://www.flaticon.com/authors/lucy-g">
+									</div>bibliosmart1@gmail.com
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Footer Copyright -->
+
+			<div class="footer_bar d-flex flex-column flex-sm-row align-items-center">
+				<div class="footer_copyright">
+					<span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Grupo 07</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+				</div>
+				<div class="footer_social ml-sm-auto">
+					<ul class="menu_social">
+						<li class="menu_social_item"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+						<li class="menu_social_item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="menu_social_item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li class="menu_social_item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="menu_social_item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/scrollTo/jquery.scrollTo.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>

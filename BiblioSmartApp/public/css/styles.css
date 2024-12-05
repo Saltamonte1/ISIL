@@ -1,0 +1,89 @@
+/* Estilos globales */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Ajustes para la sección hero */
+  .jumbotron {
+    padding: 5rem 1rem;
+  }
+  
+  /* Ajustes en la sección de sobre nosotros */
+  #nosotros img {
+    max-width: 100%; /* Para asegurarse que las imágenes se ajusten */
+    height: auto;
+  }
+  
+  /* Ajustes de las tarjetas */
+  .card {
+    margin-bottom: 30px;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Sección del footer */
+  footer {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Para el contenido principal */
+  .content {
+    padding: 0 15px;
+  }
+  
+  /* Sección de navbar */
+  .navbar {
+    padding: 1rem;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  /* Para hacer que el contenido se ajuste */
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .container {
+    max-width: 100%;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .card {
+    margin: 10px 0;
+  }
+  
+  .card img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+  
